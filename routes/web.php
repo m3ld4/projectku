@@ -19,6 +19,8 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth']], function (){
 Route::resource('karyawan', 'KaryawanController');
 
 });
+Route::resource('Barang', 'BarangController');
+Route::resource('Suplier', 'SuplierController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
